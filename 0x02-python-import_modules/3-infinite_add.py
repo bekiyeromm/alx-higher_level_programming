@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    argv=sys.argv[1:]
+    argv = sys.argv[1:]
     arg_count = len(argv)
     i = 1
     sum = 0
