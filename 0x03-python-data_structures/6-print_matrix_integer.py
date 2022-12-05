@@ -8,4 +8,3 @@ def print_matrix_integer(matrix=[[]]):
                 sep = ""
             print("{:d}".format(j), end=sep)
         print()
-
