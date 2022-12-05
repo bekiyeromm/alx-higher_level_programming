@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import operator
 def add_tuple(tuple_a=(), tuple_b=()):
     sum_tuple = ()
     temp = (0, 0)
