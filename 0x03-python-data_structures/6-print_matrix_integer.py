@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
                 if j != i[-1]:
                     sep = " "
                 else:
-                    sep =""
+                    sep = ""
                 print("{:d}".format(j), end=sep)
             print()
 
