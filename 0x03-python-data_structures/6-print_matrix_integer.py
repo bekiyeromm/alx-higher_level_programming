@@ -3,6 +3,9 @@ def print_matrix_integer(matrix=[[]]):
     if  matrix:
         for i in matrix:
             for j in i:
-                print(f"{j}", end=" ")
+                if j == i[0]:
+                    print(f"{j}", end=" ")
+                else:
+                    print(f"{j}", end=" ")
             print()
 
