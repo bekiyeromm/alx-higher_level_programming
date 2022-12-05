@@ -3,7 +3,13 @@ import operator
 def add_tuple(tuple_a=(), tuple_b=()):
     sum_tuple = ()
     temp = (0, 0)
-    tp1 = tuple_a + temp
-    tp2 = tuple_b + temp
-    sum_tuple = tp1[0] + tp2[0], tp1[1] + tp2[1]
+    if(len(tuple_a) < 2):
+        tuple_a = tuple_a + temp
+    elif (len(tuple_a) > 2):
+        tuple_a = tuple_a[:2] + temp
+    if(len(tuple_b) < 2):
+        tuple_b = tuple_b + temp
+    elif (len(tuple_b) > 2):
+        tuple_b = tuple_b[:2] + temp
+    sum_tuple = tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_a[1]
     return (sum_tuple)
