@@ -5,3 +5,4 @@
 class Square:
     """Represent a square"""
     pass
+print(Square.__doc__)
