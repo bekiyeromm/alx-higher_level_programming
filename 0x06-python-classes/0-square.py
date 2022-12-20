@@ -4,4 +4,4 @@
 
 class Square:
     """Represent a square"""
-    pass #did nothing
+    pass
