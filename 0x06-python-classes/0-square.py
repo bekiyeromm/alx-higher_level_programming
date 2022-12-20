@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-"""this is module level doc string"""
-
+"""Define a square class."""
 
 class Square:
-    """class square is empity class whichh defines square"""
+    """Represent a square class"""
     pass #did nothing
-print(Square.__doc__)
