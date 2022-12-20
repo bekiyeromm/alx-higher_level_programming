@@ -1,8 +1,14 @@
-#!/usr/bin/python3
+#!/u:sr/bin/python3
 
-"""Define a class square."""
+"""Define an empty
+
+class square."""
+
 
 class Square:
-    """Represent a square"""
+
+    """Represent an empty
+
+    square class."""
+
     pass
-print(Square.__doc__)
