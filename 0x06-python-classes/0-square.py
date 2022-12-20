@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
-""" class square is empity class
-which defines square"""
-
 class Square:
+    """class square is empity class whichh defines square"""
     pass
+print(Square.__doc__)
