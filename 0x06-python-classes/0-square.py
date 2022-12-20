@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+
+""" class square is empity class
+which defines square"""
+
 class Square:
-    """an empty class squeare
-    that defines a square"""
     pass
