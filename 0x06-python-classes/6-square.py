@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Square module.
-This module contains a class that defines a square and its size and its
-position on the screen, checking if the given values are right, and a setter
-and getter methods to set or size and position. There's also an area method
-that returns the area of the square, another one that handles the print of the square.
+defines a square and its size and its position on the screen.
+getter methods to set or size and position.area method returns the area of
+quare, another one that handles the print of the square.
+
 """
 
 
@@ -46,7 +46,7 @@ class Square():
                 value[0] >= 0 and value[1] >= 0:
             self.__position = value
         else:
-            raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive intege")
 
     def area(self):
         """Returns the current square area."""
