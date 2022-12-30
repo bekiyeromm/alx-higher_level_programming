@@ -6,9 +6,7 @@ divides two matrix element
 
 
 def matrix_divided(matrix, div):
-    """
-    divides matrix element 
-    
+    """divides matrix element
     Args:
         matrix (list): matrix element to be divided
         div (int, float) divider
