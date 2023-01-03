@@ -1,0 +1,7 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrixA = [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
+>>> matrixB = [[1, 2, 3], [4, 5, 6]]
+>>> print(matrix_divided(matrixA, 4))
+[[0.25, 0.5, 0.75], [0.75, 1.0, 1.25], [1.25, 1.5, 1.75]]
+>>> print(matrix_divided(matrixB, 3))
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]

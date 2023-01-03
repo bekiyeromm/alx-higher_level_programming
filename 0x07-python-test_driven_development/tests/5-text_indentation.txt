@@ -1,0 +1,21 @@
+First import ``text_indentation``
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now use it:
+
+Non string input:
+    >>> text_indentation(3)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+No special char in string input:
+    >>> text_indentation("hello")
+    hello
+
+No input:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
