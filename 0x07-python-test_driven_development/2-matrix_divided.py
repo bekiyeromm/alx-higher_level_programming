@@ -11,11 +11,11 @@ def matrix_divided(matrix, div):
         for item in lists:
             if not isinstance(item, (float, int)):
                 raise TypeError(message)
-    for lists in matrix:
-         if len(lists) == 0:
-             raise TypeError(message)
-    if not isinstance(div, (float, int)):
-        raise TypeError("div must be a number")
+            for lists in matrix:
+                if len(lists) == 0:
+                    raise TypeError(message)
+                if not isinstance(div, (float, int)):
+                    raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if not all(len(lists) == len(matrix[0]) for lists in matrix):
