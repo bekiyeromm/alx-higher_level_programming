@@ -9,15 +9,15 @@ def matrix_divided(matrix, div):
         if not isinstance(lists, list):
             raise TypeError(message)
         for item in lists:
-            if not isinstance(item, (float, int)):
+            if not isinstance(item, int) and not isinstance(item, float):
                 raise TypeError(message)
-            for lists in matrix:
-                if len(lists) == 0:
-                    raise TypeError(message)
-                if not isinstance(div, (float, int)):
-                    raise TypeError("div must be a number")
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
+    for lists in matrix:
+        if len(lists) == 0:
+            raise TypeError(message)
+    if not isinstance(div, int) and not isinstance(div, float):
+        raise TypeError("div must be a number")
     if not all(len(lists) == len(matrix[0]) for lists in matrix):
         raise TypeError("Each row of the matrix must have the same size")
-    return([[round(j / div, 2) for j in i] for i in matrix])
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+    return [[round(item / div, 2) for item in lists] for lists in matrix]
