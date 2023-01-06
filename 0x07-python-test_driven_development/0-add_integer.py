@@ -1,7 +1,14 @@
-#!/usr.bin/pytholn3
+#!/usr/bin/python3
+"""add_integer module"""
 
 
 def add_integer(a, b=98):
+    """func add_integer: -adds two int
+    Args:
+        a (int): integer a
+        b (int): integer b
+    Return: the sum of a and b
+    """
 
     if not isinstance(a, (float, int)):
         raise TypeError("a must be an integer")
