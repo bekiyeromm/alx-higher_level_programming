@@ -8,5 +8,5 @@ def inherits_from(obj, a_class):
     """method inherits_from:"""
     if type(obj) is a_class:
         return False
-    if isinstance(obj, a_class):
-        return True
+    else:
+        return isinstance(obj, a_class)
