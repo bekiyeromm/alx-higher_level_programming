@@ -8,7 +8,8 @@ class MyList(list):
     """class Mylist inherited from class list
     with a method print_sorted that prints a list in sorted
     order"""
+    pass
 
     def print_sorted(self):
         """prints a lists sorted in ascending order"""
-        print(sorted(self))
+        print(sorted(list(self)))
