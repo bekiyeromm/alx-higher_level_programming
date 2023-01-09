@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""a module named MyList that inherited from module list
-and prints alist in sorted (ascending sort)
+"""
+Module with class MyList
 """
 
 
 class MyList(list):
-    """class Mylist inherited from class list
-    with a method print_sorted that prints a list in sorted
-    order"""
+    """Class with method print_sorted"""
     pass
 
     def print_sorted(self):
-        """prints a lists sorted in ascending order"""
+        """Methot that sorted a list"""
+
         print(sorted(list(self)))
