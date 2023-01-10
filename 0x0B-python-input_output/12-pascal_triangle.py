@@ -9,5 +9,5 @@ def pascal_triangle(n):
     y = [0]
     for x in range(max(n, 0)):
         triangle.append(line)
-        line = [l + r for l, r in zip(line + y, y + line)]
+        line = [a + r for a, r in zip(line + y, y + line)]
     return triangle
