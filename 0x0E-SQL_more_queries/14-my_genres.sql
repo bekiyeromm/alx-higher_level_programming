@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+-- Import the database dump from hbtn_0d_tvshows to your MySQL server(download)
 -- uses the hbtn_0d_tvshows database to lists all genres of the show Dexter
 -- tv_shows table contains only one record where title = Dexter
 -- Each record should display: tv_genres.name
