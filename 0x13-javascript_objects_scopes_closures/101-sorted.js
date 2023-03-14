@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const dict = require('./101-data.js').dict;
-function getUserIdsByOccurrence(dict) {
+function getUserIdsByOccurrence (dict) {
   const result = {};
   // Iterate over the user ids in the input dictionary
   for (const userId in dict) {
