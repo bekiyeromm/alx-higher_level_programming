@@ -15,6 +15,7 @@ if __name__ == "__main__":
     state = cursor.fetchall()
 
     for st in state:
-        print(st)
-cursor.close()
-conn.close()
+        if st[1][0] == 'N':
+            print(st)
+    cursor.close()
+    conn.close()
