@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ lists all states with a name starting with N (upper N) from
 the database hbtn_0e_0_usa
-#usage ./1-filter_states.py root root hbtn_0e_0_usa"""
+usage ./1-filter_states.py root root hbtn_0e_0_usa"""
 
 
 import MySQLdb
@@ -16,3 +16,5 @@ if __name__ == "__main__":
 
     for st in state:
         print(st)
+cursor.close()
+conn.close()
