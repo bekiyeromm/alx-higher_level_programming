@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # Query cities and states from the database
     cities = session.query(City, State).filter(City.state_id == State.id)\
-            .order_by(City.id).all()
+                    .order_by(City.id).all()
 
     # Print results grouped by state
     for city, state in cities:
