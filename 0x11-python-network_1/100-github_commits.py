@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" """
+"""list 10 commits (from the most recent to oldest) of the repository
+“rails” by the user “rails
+"""
 
 
 import requests
