@@ -11,5 +11,5 @@ import sys
 reqst = urllib.request.Request(sys.argv[1])
 if __name__ == "__main__":
     with urllib.request.urlopen(reqst) as response:
-        request_id = response.headers.get('X-Request-Id')
+        request_id = dict(response.headers).get('X-Request-Id')
         print(request_id)
