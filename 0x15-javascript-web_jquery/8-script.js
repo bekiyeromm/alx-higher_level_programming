@@ -1,9 +1,15 @@
+const moviesUri = 'https://swapi-api.hbtn.io/api/films/?format=json';
+const $movieList = $('ul#list_movies');
+
 $.ajax({
-    url: 'https://swapi-api.alx-tools.com/api/films/?format=json',
-    method: 'GET',
-    success: function(data) {
-        $.each(data.results, function(index, movie) {
-            $("UL#list_movies").append("<li>" + movie.title + "</li>");
-          });
-    },
-  });
+  url: moviesUri,
+  dataType: 'json'
+}).done((data) => {
+  const movies = data.results;
+
+  for (let i = 0; i < movies.length; ++i) {
+    const movieTitle = movies[i].title;
+    const element = `<li>${movieTitle}`;
+    $movieList.append(element);
+  }
+});
